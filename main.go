@@ -31,7 +31,7 @@ func main() {
 }
 
 func interval(messages *[]string) {
-	ticker := time.NewTicker(5 * time.Second)
+	ticker := time.NewTicker(30 * time.Minute)
 	quit := make(chan struct{})
 	go func() {
 		for {
